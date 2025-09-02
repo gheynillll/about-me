@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #eee;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1, p, img, button {
+      opacity: 0;
+      animation: fadeUp 1.8s ease forwards;
+    }
+    h1 { 
+      color: #00eaff;
+      text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+      animation-delay: 0.5s;
+    }
+    p {
+      animation-delay: 1s;
+    }
+    img {
+      width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      transition: 0.3s;
+      margin: 15px 0;
+      animation-delay: 1.5s;
+    }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 234, 255, 0.7);
+    }
+    button {
+      background: linear-gradient(90deg, #00eaff, #0066ff);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px 8px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #00eaff, 0 0 20px #0066ff;
+      animation-delay: 2s;
+    }
+    button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px #00eaff, 0 0 40px #0066ff, 0 0 60px #00eaff;
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Halo, nama gw Gheynil 😎</h1>
+  <p>gw (gak) suka ngoding, ngopi, dan main game indie. Kadang suka lakuin hal random</p>
+  <img src="https://cdn.discordapp.com/attachments/903221833241878568/1412329864635220041/selfie_mirror.jpg?ex=68b7e62f&is=68b694af&hm=b8156b59f8a5ed0bbd3205900b545c85ae6d6e1aba1f18ccd859d562141ac76c&" alt="Foto gw">
+  <p>pls temenan sama aku bang</p>
+  <div>
+    <button onclick="window.location.href='https://wa.me/+62895383316278';">Whatsapp</button>
+    <button onclick="window.location.href='https://www.instagram.com/gheynilunderscore?igsh=MTgwMnozbmd3M2hhNA==';">Instagram</button>
+  </div>
+
+</body>
+</html>
